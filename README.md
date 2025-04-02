@@ -15,26 +15,31 @@ my-portfolio
  
  portfolio
   index.html # Homepage
+  
       about me
       my passions
       my vision
       my projects
  
  education.html # Academic journey
+ 
      academic journey
      my cv
      learning milestones
  
  skills.html # Skills & talents
+ 
      technical skills
      talent
      hobbies
  
  future.html # Career aspirations
+ 
      future goals
      growth stratagy
  
  contact.html # Contact form
+ 
      contact details
      form connected to email
  
