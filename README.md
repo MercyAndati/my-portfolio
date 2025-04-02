@@ -3,7 +3,7 @@ my-portfolio
  
  # my portfolio
  # Mercy Andati | Software Developer Portfolio 👩‍💻
- *Live Demo: [mercyandati.netlify.app](https://mercyportfolio.netlify.app/)*
+ *Live Demo: [mercyportfolio.netlify.app](https://mercyportfolio.netlify.app/)*
  
  ## 🌟 About This Project
  A responsive portfolio showcasing my journey as a software engineering student at Zetech University, Kenya. Built with pure HTML/CSS/JS and deployed on Netlify.
