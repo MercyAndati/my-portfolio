@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Mercy Andati, a Software Engineering Student and Creative Developer specializing in full-stack development.">
+    <meta name="keywords"
+        content="Mercy Andati, software developer, web developer, portfolio, Kenya, full-stack, UI/UX">
+    <meta name="author" content="Mercy Andati">
+    <title>Mercy Andati | Software Engineering Student & Creative Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="logo-group">
+                <img src="img/ma.png" alt="Mercy Andati" class="profile-image"> <!-- Fixed path separator -->
+                <span class="logo-text">Mercy Andati</span>
+            </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#future" class="nav-link">Future</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- HOME SECTION -->
+        <section id="home" class="section hello">
+            <div class="hello-content">
+                <h1 class="hello-title">Hello, I'm <span class="text-accent">Mercy Andati</span></h1>
+                <h2 class="hello-subtitle">Software Engineering Student & Creative Developer</h2>
+                <div class="hello-text">
+                    <p>I build digital experiences that combine solid technical foundations with thoughtful,
+                        user-focused design. I am passionate about learning and solving real-world problems through code
+                        and design.</p>
+                </div>
+                <div class="hello-actions">
+                    <a href="#projects" class="btn btn-hello">
+                        <i class="fas fa-eye"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-hello"
+                        style="background: transparent; border: 2px solid var(--accent); margin-left: 1rem;">
+                        <i class="fas fa-paper-plane"></i> Let's Talk
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="card fade-in">
+                <h2 class="section-header">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a dedicated software engineering student at Zetech University, driven by a curiosity for
+                            how digital systems influence our daily lives. My journey in tech is fueled by a desire to
+                            create functional, beautiful, and user-centric applications.</p>
+                        <p>Beyond the code, I believe in the power of technology to bridge gaps and create
+                            opportunities. As a developer, I focus on building functional, user-centered solutions while
+                            continuously improving my skills.</p>
+                    </div>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Zetech University</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>andatishine@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <h2 class="section-header">My Journey</h2>
+            <div class="card fade-in">
+                <div class="timeline">
+                    <!-- Current -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - Present</div>
+                        <h3 class="timeline-title">Zetech University</h3>
+                        <p>Gaining strong theoretical foundations in algorithms, system design, and software
+                            architecture.</p>
+                    </div>
+
+                    <!-- Past -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">PLP Academy</h3>
+                        <p>Refining full-stack development skills with a focus on modern web technologies and database
+                            management.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">ADMI College</h3>
+                        <p>Certificate in Graphic Design. Mastered visual communication tools including Adobe Photoshop
+                            and Illustrator.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022</div>
+                        <h3 class="timeline-title">KCSE Certification</h3>
+                        <p>Completed secondary education with a strong B average, laying the groundwork for a career in
+                            technology.</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="img/cv.pdf" class="btn" download>
+                        <i class="fas fa-file-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <h2 class="section-header">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="img\chat.png" alt="Char-room">
+                        <div class="project-overlay">
+                            <a href="https://chat-app-phi-two-43.vercel.app/chat" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Chat Room</h3>
+                        <p>A real-time chat application built using Node.js, Express, Socket.io, and MongoDB, supporting
+                            live messaging and user interaction.</p>
+                        <div class="project-tags">
+                            <span>MERN</span>
+                            <span>Responsive</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="img\TrashLance.png" alt="TrashLance">
+                        <div class="project-overlay">
+                            <a href="https://trash-lance.vercel.app/" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>TrashLance</h3>
+                        <p>A full-stack MERN application connecting users with reliable waste management services. Book
+                            collectors, report issues, chat, and track your environmental impact. </p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Responsive</span>
+                            <span>Full-stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <img src="img\HR.png" alt="HR">
+                        <div class="project-overlay">
+                            <a href="https://hr1-liard.vercel.app/dashboard" class="btn" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>HR-Mangment system</h3>
+                        <p>A frontend prototype for a school HR management system, built to demonstrate dashboard design
+                            and data presentation.</p>
+                        <div class="project-tags">
+                            <span>Frontend</span>
+                            <span>MockData</span>
+                            <span>Personal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <h2 class="section-header">Technical Toolkit</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Skills listed reflect hands-on academic and personal
+                project experience.</p>
+
+            <div class="skills-grid-wrapper">
+                <!-- Coding Skills -->
+                <div class="skill-category-card">
+                    <div class="skill-category-title">
+                        <i class="fas fa-code"></i> Coding Skills
+                    </div>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="devicon-html5-plain tech-logo"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-css3-plain tech-logo"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-javascript-plain tech-logo"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-typescript-plain tech-logo"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-react-original tech-logo"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-python-plain tech-logo"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-csharp-plain tech-logo"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-layer-group tech-logo"></i>
+                            <span>MERN Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category-card">
+                    <div class="skill-category-title">
+                        <i class="fas fa-tools"></i> Tools & Platforms
+                    </div>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="devicon-git-plain tech-logo"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-github-original tech-logo"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-vscode-plain tech-logo"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-postman-plain tech-logo"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-vercel-original tech-logo"></i>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-cloud tech-logo"></i>
+                            <span>Render</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="skill-category-card">
+                    <div class="skill-category-title">
+                        <i class="fas fa-pencil-ruler"></i> UI/UX Design
+                    </div>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="devicon-figma-plain tech-logo"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-object-group tech-logo"></i>
+                            <span>Wireframing</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-users tech-logo"></i>
+                            <span>User-Centered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://github.com/MercyAndati" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> Visit My GitHub
+                </a>
+            </div>
+        </section>
+
+        <!-- FUTURE SECTION -->
+        <section id="future" class="section">
+            <h2 class="section-header">Future Vision</h2>
+            <div class="card fade-in">
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--light);">
+                    My roadmap involves constant learning, growing into a strong full-stack, UI/UX-focused role, or
+                    project managment role and eventually contributing to impactful tech initiatives in Africa.
+                </p>
+                <div class="vision-grid">
+                    <div class="vision-card">
+                        <div class="vision-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Technical Mastery</h3>
+                        <p>Mastering AI and Cloud Computing to build scalable, intelligent systems.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3>Leadership</h3>
+                        <p>Leading diverse teams to deliver world-class software solutions.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon"><i class="fas fa-globe-africa"></i></div>
+                        <h3>Impact</h3>
+                        <p>Using technology to solve pressing challenges in education and healthcare.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <h2 class="section-header">Get In Touch</h2>
+            <div class="card fade-in">
+                <div style="display: flex; flex-wrap: wrap; gap: 4rem;">
+                    <!-- Contact Info -->
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Let's Connect</h3>
+                        <p>Currently open to internships, freelance projects, and collaborative opportunities.</p>
+
+                        <div style="margin-top: 2rem; display: grid; gap: 1.5rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-envelope" style="color: var(--accent); font-size: 1.5rem;"></i>
+                                <a href="mailto:andatishine@gmail.com"
+                                    style="color: var(--light);">andatishine@gmail.com</a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fas fa-phone" style="color: var(--accent); font-size: 1.5rem;"></i>
+                                <a href="tel:+254708491816" style="color: var(--light);">+254 708 491 816</a>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fab fa-linkedin" style="color: var(--accent); font-size: 1.5rem;"></i>
+                                <a href="#" style="color: var(--light);">LinkedIn Profile</a>
+                                <!-- Placeholder, can update if user provides link -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/andatishine@gmail.com"
+                        method="POST" style="flex: 1; min-width: 300px;">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/MercyAndati" class="social-link" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="copyright">&copy; Mercy Andati
+            <script>document.write(new Date().getFullYear());</script> | Crafted with creativity and passion
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
