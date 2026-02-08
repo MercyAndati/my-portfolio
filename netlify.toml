@@ -1,0 +1,36 @@
+[build]
+  # The directory that contains the ready-to-deploy HTML files
+  publish = "." 
+  # No build command is needed for a simple static site
+  command = "# no build command"
+
+# Redirects for old pages to new sections in the single-page app
+[[redirects]]
+  from = "/education.html"
+  to = "/#education"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/skills.html"
+  to = "/#skills"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/future.html"
+  to = "/#future"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/#contact"
+  status = 301
+  force = true
+
+# Fallback for 404s to home page
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
