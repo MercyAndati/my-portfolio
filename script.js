@@ -1,3 +1,30 @@
+// Theme Toggle Logic
+const themeToggle = document.getElementById('themeToggle');
+const root = document.documentElement;
+const themeIcon = themeToggle.querySelector('i');
+
+// Strictly default to dark mode on initial load unless 'light' is manually found in local storage
+const savedTheme = localStorage.getItem('theme') || 'dark';
+root.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = root.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    root.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
+
+function updateThemeIcon(theme) {
+    if (theme === 'light') {
+        themeIcon.className = 'fas fa-moon';
+    } else {
+        themeIcon.className = 'fas fa-sun';
+    }
+}
+
 // Mobile Menu Toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
@@ -7,7 +34,6 @@ if (menuToggle) {
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
         
-        // Icon animation toggle
         const icon = menuToggle.querySelector('i');
         if (navLinks.classList.contains('active')) {
             icon.classList.remove('fa-bars');
@@ -31,7 +57,6 @@ if (menuToggle) {
 
 // Active Link Highlighting on Scroll
 const sections = document.querySelectorAll('section');
-const navItems = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -45,7 +70,7 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    navItems.forEach(a => {
+    navLinksItems.forEach(a => {
         a.classList.remove('active');
         if (a.getAttribute('href').includes(current)) {
             a.classList.add('active');
@@ -57,15 +82,11 @@ window.addEventListener('scroll', () => {
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
-        // Since we are using formsubmit.co, let the default submission happen or manage it via AJAX
-        // If the user wants AJAX behavior for better UX:
         e.preventDefault();
         
-        // Clear existing messages
         const existingMessage = contactForm.querySelector('.form-success');
         if (existingMessage) existingMessage.remove();
         
-        // Create and show sending message
         const message = document.createElement('div');
         message.className = 'form-success';
         message.style.marginTop = '1rem';
@@ -87,14 +108,14 @@ if (contactForm) {
             });
             
             if (response.ok) {
-                message.innerHTML = `<i class="fas fa-check-circle"></i> Thank you! Your message has been sent.`;
+                message.innerHTML = `<i class="fas fa-check-square"></i> Thank you! Your message has been sent.`;
                 contactForm.reset();
             } else {
                 throw new Error('Failed to send');
             }
         } catch (error) {
-            message.innerHTML = `<i class="fas fa-times-circle"></i> Failed to send. Please try again or email me directly at andatishine@gmail.com`;
-            message.style.color = '#ff6b6b';
+            message.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Failed to send. Please try again or email me directly at andatishine@gmail.com`;
+            message.style.color = 'red';
         } finally {
             submitBtn.disabled = false;
             setTimeout(() => {

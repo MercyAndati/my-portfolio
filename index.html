@@ -19,12 +19,16 @@
     <nav>
         <div class="container nav-container">
             <div class="logo-group">
-                <img src="img/ma.png" alt="Mercy Andati" class="profile-image">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
                 <span class="logo-text">Mercy Andati</span>
             </div>
 
-            <div class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
+            <div class="nav-controls">
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
 
             <div class="nav-links" id="navLinks">
@@ -39,7 +43,6 @@
     </nav>
 
     <main class="container">
-        <!-- HOME SECTION -->
         <section id="home" class="section hello">
             <div class="hello-content">
                 <h1 class="hello-title">Hello, I'm <span class="text-accent">Mercy Andati</span></h1>
@@ -53,15 +56,13 @@
                     <a href="#projects" class="btn btn-hello">
                         <i class="fas fa-eye"></i> View My Work
                     </a>
-                    <a href="#contact" class="btn btn-hello"
-                        style="background: transparent; border: 2px solid var(--accent); margin-left: 1rem;">
+                    <a href="#contact" class="btn btn-outline" style="margin-left: 1rem;">
                         <i class="fas fa-paper-plane"></i> Let's Talk
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT SECTION -->
         <section id="about" class="section">
             <div class="card fade-in">
                 <h2 class="section-header">About Me</h2>
@@ -92,13 +93,24 @@
             </div>
         </section>
 
-        <!-- EDUCATION SECTION -->
         <section id="education" class="section">
             <h2 class="section-header">My Journey</h2>
             <div class="card fade-in">
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">2023 - Present</div>
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">UX Design Fundamentals - IBM SkillsBuild</h3>
+                        <p>Demonstrated knowledge of core UX design concepts and processes. Gained practical understanding of user personas, wireframing, prototyping, usability testing, cross-team collaboration, and reviewing UX design case studies for website redesigns.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026</div>
+                        <h3 class="timeline-title">Project Management Fundamentals - IBM SkillsBuild</h3>
+                        <p>Mastering project management concepts, frameworks, and lifecycles—initiating, planning, executing, monitoring, controlling, and closing. Proficient in delivering project charters, work breakdown structures (WBS), communications management plans, and change requests.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - 2026</div>
                         <h3 class="timeline-title">Zetech University</h3>
                         <p>Gained theoretical and practical foundations in Object Oriented Programming, Software design methods and architecture, Operating Systems, Database management systems, Computer support and maintenance, Data science, Mobile computing, Internet programming, Network engineering, Software metrics, Visual programming, Simulation and modeling, Distributed computing, Software testing, Cloud computing, User centred design, Research methods, Software quality assurance, Cyber security, Game development, Real time software systems, Enterprise application development, GIS.</p>
                     </div>
@@ -106,26 +118,23 @@
                     <div class="timeline-item">
                         <div class="timeline-date">2025</div>
                         <h3 class="timeline-title">PLP Academy</h3>
-                        <p>Refining full-stack development skills with a focus on modern web technologies and database
-                            management.</p>
+                        <p>Refining full-stack development skills with a focus on modern web technologies and database management.</p>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-date">2023</div>
                         <h3 class="timeline-title">ADMI College</h3>
-                        <p>Certificate in Graphic Design. Mastered visual communication tools including Adobe Photoshop
-                            and Illustrator.</p>
+                        <p>Certificate in Graphic Design. Mastered visual communication tools including Adobe Photoshop and Illustrator.</p>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-date">2022</div>
                         <h3 class="timeline-title">KCSE Certification</h3>
-                        <p>Completed secondary education with a B plain, laying the groundwork for a career in
-                            technology.</p>
+                        <p>Completed secondary education with a B plain, laying the groundwork for a career in technology.</p>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
-                    <a href="img\mercyCV.pdf" class="btn" target="_blank">
+                <div class="education-buttons" style="margin-top: 2rem;">
+                    <a href="img\mercyCV.pdf" class="btn btn-outline" target="_blank">
                         <i class="fas fa-eye"></i> View CV
                     </a>
                     <a href="img\mercyCV.pdf" class="btn" download>
@@ -135,11 +144,9 @@
             </div>
         </section>
 
-        <!-- PROJECTS SECTION -->
         <section id="projects" class="section">
             <h2 class="section-header">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-preview">
                         <img src="img\chat.png" alt="Char-room">
@@ -151,8 +158,7 @@
                     </div>
                     <div class="project-details">
                         <h3>Chat Room</h3>
-                        <p>A real-time chat application built using Node.js, Express, Socket.io, and MongoDB, supporting
-                            live messaging and user interaction.</p>
+                        <p>A real-time chat application built using Node.js, Express, Socket.io, and MongoDB, supporting live messaging and user interaction.</p>
                         <div class="project-tags">
                             <span>MERN</span>
                             <span>Responsive</span>
@@ -161,7 +167,6 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-preview">
                         <img src="img\TrashLance.png" alt="TrashLance">
@@ -173,8 +178,7 @@
                     </div>
                     <div class="project-details">
                         <h3>TrashLance</h3>
-                        <p>A full-stack MERN application connecting users with reliable waste management services. Book
-                            collectors, report issues, chat, and track your environmental impact. </p>
+                        <p>A full-stack MERN application connecting users with reliable waste management services. Book collectors, report issues, chat, and track your environmental impact. </p>
                         <div class="project-tags">
                             <span>UI/UX</span>
                             <span>Responsive</span>
@@ -183,7 +187,6 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-preview">
                         <img src="img\HR.png" alt="HR">
@@ -195,8 +198,7 @@
                     </div>
                     <div class="project-details">
                         <h3>HR-Mangment system</h3>
-                        <p>A frontend prototype for a school HR management system, built to demonstrate dashboard design
-                            and data presentation.</p>
+                        <p>A frontend prototype for a school HR management system, built to demonstrate dashboard design and data presentation.</p>
                         <div class="project-tags">
                             <span>Frontend</span>
                             <span>MockData</span>
@@ -205,10 +207,9 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-preview">
-                        <img src="img\AnatomyTime.png" alt="HR">
+                        <img src="img\AnatomyTime.png" alt="AnatomyTime">
                         <div class="project-overlay">
                             <a href="https://anatomytime-orcin.vercel.app/" class="btn" target="_blank">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
@@ -226,10 +227,9 @@
                     </div>
                 </div>
 
-                <!-- Project 5 -->
                 <div class="project-card">
                     <div class="project-preview">
-                        <img src="img\CherryFocus.png" alt="HR">
+                        <img src="img\CherryFocus.png" alt="Cherry Focus">
                         <div class="project-overlay">
                             <a href="https://cherry-focus.vercel.app/" class="btn" target="_blank">
                                 <i class="fas fa-external-link-alt"></i> Live Demo
@@ -249,122 +249,64 @@
             </div>
         </section>
 
-        <!-- SKILLS SECTION -->
         <section id="skills" class="section">
             <h2 class="section-header">Technical Toolkit</h2>
-            <p style="text-align: center; margin-bottom: 2rem;">Skills listed reflect hands-on academic and personal
-                project experience.</p>
+            <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">Skills listed reflect hands-on academic and personal project experience.</p>
 
             <div class="skills-grid-wrapper">
-                <!-- Coding Skills -->
                 <div class="skill-category-card">
                     <div class="skill-category-title">
                         <i class="fas fa-code"></i> Coding Skills
                     </div>
                     <div class="tech-grid">
-                        <div class="tech-item">
-                            <i class="devicon-html5-plain tech-logo"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-css3-plain tech-logo"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-javascript-plain tech-logo"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-typescript-plain tech-logo"></i>
-                            <span>TypeScript</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-react-original tech-logo"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-python-plain tech-logo"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-csharp-plain tech-logo"></i>
-                            <span>C#</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-layer-group tech-logo"></i>
-                            <span>MERN Stack</span>
-                        </div>
+                        <div class="tech-item"><i class="devicon-html5-plain tech-logo"></i><span>HTML5</span></div>
+                        <div class="tech-item"><i class="devicon-css3-plain tech-logo"></i><span>CSS3</span></div>
+                        <div class="tech-item"><i class="devicon-javascript-plain tech-logo"></i><span>JavaScript</span></div>
+                        <div class="tech-item"><i class="devicon-typescript-plain tech-logo"></i><span>TypeScript</span></div>
+                        <div class="tech-item"><i class="devicon-react-original tech-logo"></i><span>React</span></div>
+                        <div class="tech-item"><i class="devicon-python-plain tech-logo"></i><span>Python</span></div>
+                        <div class="tech-item"><i class="devicon-csharp-plain tech-logo"></i><span>C#</span></div>
+                        <div class="tech-item"><i class="fas fa-layer-group tech-logo"></i><span>MERN Stack</span></div>
                     </div>
                 </div>
 
-                <!-- Tools & Platforms -->
                 <div class="skill-category-card">
                     <div class="skill-category-title">
                         <i class="fas fa-tools"></i> Tools & Platforms
                     </div>
                     <div class="tech-grid">
-                        <div class="tech-item">
-                            <i class="devicon-git-plain tech-logo"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-github-original tech-logo"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-vscode-plain tech-logo"></i>
-                            <span>VS Code</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-postman-plain tech-logo"></i>
-                            <span>Postman</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="devicon-vercel-original tech-logo"></i>
-                            <span>Vercel</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-cloud tech-logo"></i>
-                            <span>Render</span>
-                        </div>
+                        <div class="tech-item"><i class="devicon-git-plain tech-logo"></i><span>Git</span></div>
+                        <div class="tech-item"><i class="devicon-github-original tech-logo"></i><span>GitHub</span></div>
+                        <div class="tech-item"><i class="devicon-vscode-plain tech-logo"></i><span>VS Code</span></div>
+                        <div class="tech-item"><i class="devicon-postman-plain tech-logo"></i><span>Postman</span></div>
+                        <div class="tech-item"><i class="devicon-vercel-original tech-logo"></i><span>Vercel</span></div>
+                        <div class="tech-item"><i class="fas fa-cloud tech-logo"></i><span>Render</span></div>
                     </div>
                 </div>
 
-                <!-- UI/UX Design -->
                 <div class="skill-category-card">
                     <div class="skill-category-title">
                         <i class="fas fa-pencil-ruler"></i> UI/UX Design
                     </div>
                     <div class="tech-grid">
-                        <div class="tech-item">
-                            <i class="devicon-figma-plain tech-logo"></i>
-                            <span>Figma</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-object-group tech-logo"></i>
-                            <span>Wireframing</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-users tech-logo"></i>
-                            <span>User-Centered</span>
-                        </div>
+                        <div class="tech-item"><i class="devicon-figma-plain tech-logo"></i><span>Figma</span></div>
+                        <div class="tech-item"><i class="fas fa-object-group tech-logo"></i><span>Wireframing</span></div>
+                        <div class="tech-item"><i class="fas fa-users tech-logo"></i><span>User-Centered</span></div>
                     </div>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="https://github.com/MercyAndati" target="_blank" class="btn">
+                <a href="https://github.com/MercyAndati" target="_blank" class="btn btn-outline">
                     <i class="fab fa-github"></i> Visit My GitHub
                 </a>
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
         <section id="contact" class="section">
             <h2 class="section-header">Get In Touch</h2>
             <div class="card fade-in">
                 <div style="display: flex; flex-wrap: wrap; gap: 4rem;">
-                    <!-- Contact Info -->
                     <div style="flex: 1; min-width: 300px;">
                         <h3>Let's Connect</h3>
                         <p>Currently open to internships, full-time job, freelance projects, and collaborative opportunities.</p>
@@ -372,21 +314,19 @@
                         <div style="margin-top: 2rem; display: grid; gap: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 1rem;">
                                 <i class="fas fa-envelope" style="color: var(--accent); font-size: 1.5rem;"></i>
-                                <a href="mailto:andatishine@gmail.com"
-                                    style="color: var(--light);">andatishine@gmail.com</a>
+                                <a href="mailto:andatishine@gmail.com" class="contact-link">andatishine@gmail.com</a>
                             </div>
                             <div style="display: flex; align-items: center; gap: 1rem;">
                                 <i class="fas fa-phone" style="color: var(--accent); font-size: 1.5rem;"></i>
-                                <a href="tel:+254708491816" style="color: var(--light);">+254 708 491 816</a>
+                                <a href="tel:+254708491816" class="contact-link">+254 708 491 816</a>
                             </div>
                             <div style="display: flex; align-items: center; gap: 1rem;">
                                 <i class="fab fa-linkedin" style="color: var(--accent); font-size: 1.5rem;"></i>
-                                <a href="www.linkedin.com/in/mercy-andati" style="color: var(--light);">LinkedIn Profile</a>
+                                <a href="https://www.linkedin.com/in/mercy-andati" class="contact-link">LinkedIn Profile</a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Contact Form -->
                     <form class="contact-form" id="contactForm" action="https://formsubmit.co/andatishine@gmail.com"
                         method="POST" style="flex: 1; min-width: 300px;">
                         <input type="hidden" name="_captcha" value="false">
@@ -418,9 +358,8 @@
 
     <footer>
         <div class="social-links">
-            <a href="www.linkedin.com/in/mercy-andati" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/MercyAndati" class="social-link" aria-label="GitHub"><i
-                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mercy-andati" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/MercyAndati" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
