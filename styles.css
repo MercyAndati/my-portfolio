@@ -200,6 +200,14 @@ nav {
     letter-spacing: 2px;
 }
 
+.skills-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
 /* Cards */
 .card {
     background: var(--bg-card);
